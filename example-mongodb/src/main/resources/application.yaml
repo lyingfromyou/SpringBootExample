@@ -1,0 +1,11 @@
+server:
+  port: 9999
+spring:
+  data:
+    mongodb:
+      uri: mongodb://192.168.239.234:27017/springbootdb
+
+
+#spring.data.mongodb.urimongodb://name:pass@localhost:27017/test
+
+#spring.data.mongodb.uri: mongodb://192.168.239.234:27017/springbootdb
