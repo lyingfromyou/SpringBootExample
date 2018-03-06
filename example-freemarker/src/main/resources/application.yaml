@@ -1,0 +1,35 @@
+##MyBatis配置
+mybatis:
+  ##实体所在包
+  type-aliases-package: com.lying.examplefreemarker.domain
+  ##mapper配置文件
+  mapper-locations: classpath:mapper/*.xml
+
+spring:
+  ##数据库配置
+  datasource:
+    url: jdbc:mysql://192.168.239.234:3306/test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  ##Freemarker配置
+  freemarker:
+    ##文件路径
+    template-loader-path: classpath:/templates/
+    ##是否启用模板缓存
+    cache: false
+    ##模板编码
+    charset: utf-8
+    ##是否检查模板位置是否存在
+    check-template-location: true
+    ##内容类型值
+    content-type: text/html
+    ##在与模板合并之前是否应将所有请求属性添加到模型中。
+    expose-request-attributes: true
+    ##在与模板合并之前是否应将所有HttpSession属性添加到模型中。
+    expose-session-attributes: true
+    ##所有视图的RequestContext属性的名称。
+    request-context-attribute: request
+    ##模板后缀
+    suffix: .ftl
+
