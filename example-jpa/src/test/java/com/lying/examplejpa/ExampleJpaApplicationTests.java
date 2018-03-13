@@ -20,8 +20,8 @@ public class ExampleJpaApplicationTests {
 	public void contextLoads() {
 		User u1 = new User(null, "Lying", 24);
 		repository.save(u1);
-		System.err.println(repository.findAll());
-
+		System.err.println(repository.findByName("Lying"));
+		System.err.println(repository.findUser("Lying"));
 	}
 
 }
