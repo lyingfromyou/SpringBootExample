@@ -1,0 +1,15 @@
+server:
+  port: 9999
+
+app.datasource:
+  primary:
+    url: jdbc:mysql://192.168.239.234/test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  secondary:
+    url: jdbc:mysql://192.168.239.234/test2
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
