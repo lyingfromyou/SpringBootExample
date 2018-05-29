@@ -6,10 +6,10 @@ import com.lying.examplemybatis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class UserServiceImpl implements UserService {
-
-    @Autowired
+//
+//    @Autowired
     private UserDao userDao;
 
     @Override
